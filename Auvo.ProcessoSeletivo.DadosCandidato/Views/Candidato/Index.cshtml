@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Candidato";
+    var candidato = new Candidato();
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2>@candidato.Nome</h2>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Pretenção Salarial:</dt>
+            <dd class="col-sm-9">@candidato.PretencaoSalarial.ToString("C")</dd>
+            <dt class="col-sm-3">Data do Teste:</dt>
+            <dd class="col-sm-9">R$ @candidato.DataTeste </dd>
+        </dl>
+    </div>
+</div>
